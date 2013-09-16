@@ -22,7 +22,7 @@ Usage
     .left(0.5)
     .right(300.5)
     .bottom(300.5)
-    .padding(20)
+    .linespacing(20)
     .linewidth(1)
     .color('deepskyblue')
     .draw(canvas);
