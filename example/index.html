@@ -16,6 +16,8 @@
       canvas.height = 301;
       document.body.appendChild(canvas);
 
+      var ctx = canvas.getContext('2d');
+      
       var grid = require('component-grid')();
       grid
         .top(0.5)
@@ -25,7 +27,7 @@
         .linespacing(20)
         .linewidth(1)
         .color('deepskyblue')
-        .draw(canvas);
+        .draw(ctx);
     
     </script>
   </body>
