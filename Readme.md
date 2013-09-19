@@ -38,6 +38,44 @@ See [demo](http://component-kelonye.rhcloud.com/#/523b44b58acdd27159000002)
 
     $ make example
 
+## Api
+
+### grid()
+
+  Make new grid
+
+### Grid#top(number)
+
+  Set grid's topleft x position as `top`
+
+### Grid#left(number)
+
+  Set grid's topleft y position as `left`
+
+### Grid#right(number)
+
+  Set grid's bottomright x position as `right`
+
+### Grid#bottom(number)
+  
+  Set grid's bottomright y position as `bottom`
+
+### Grid#color(string)
+
+  Set strokeStyle as `color`
+
+### Grid#linewidth(number)
+
+  Set lineWidth as `linewidth`
+
+### Grid#linespacing(number)
+
+  Set lines apart with `linespacing`
+
+### Grid#draw(canvas)
+  
+  Draw the grid on the given `canvas`
+
 License
 ---
 
