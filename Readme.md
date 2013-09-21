@@ -17,16 +17,11 @@ Usage
   document.body.appendChild(canvas);
 
   var ctx = canvas.getContext('2d');
+  ctx.strokeStyle = 'deepskyblue';
 
-  var grid = require('component-grid')();
+  var grid = require('component-grid')(0.5, 300.5, 300.5, 0.5);
   grid
-    .top(0.5)
-    .left(0.5)
-    .right(300.5)
-    .bottom(300.5)
     .linespacing(20)
-    .linewidth(1)
-    .color('deepskyblue')
     .draw(canvas);
 
 ```
@@ -40,35 +35,11 @@ See [demo](http://component-kelonye.rhcloud.com/#/523b44b58acdd27159000002)
 
 ## Api
 
-### grid()
+### grid(top, right, bottom, left)
 
-  Make new grid
+  Make new grid sized (top, right, bottom, left).
 
-### Grid#top(number)
-
-  Set grid's topleft x position as `top`
-
-### Grid#left(number)
-
-  Set grid's topleft y position as `left`
-
-### Grid#right(number)
-
-  Set grid's bottomright x position as `right`
-
-### Grid#bottom(number)
-  
-  Set grid's bottomright y position as `bottom`
-
-### Grid#color(string)
-
-  Set strokeStyle as `color`
-
-### Grid#linewidth(number)
-
-  Set lineWidth as `linewidth`
-
-### Grid#linespacing(number)
+### Grid#linespacing(linespacing)
 
   Set lines apart with `linespacing`
 
