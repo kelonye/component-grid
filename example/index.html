@@ -19,8 +19,8 @@
       var ctx = canvas.getContext('2d');
       ctx.strokeStyle = 'deepskyblue';
 
-      var grid = require('component-grid')(0.5, 300.5, 300.5, 0.5);
-      grid
+      var grid = require('component-grid');
+      grid(0.5, 300.5, 300.5, 0.5)
         .linespacing(20)
         .draw(canvas);
 

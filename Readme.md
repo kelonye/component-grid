@@ -19,8 +19,8 @@ Usage
   var ctx = canvas.getContext('2d');
   ctx.strokeStyle = 'deepskyblue';
 
-  var grid = require('component-grid')(0.5, 300.5, 300.5, 0.5);
-  grid
+  var grid = require('component-grid');
+  grid(0.5, 300.5, 300.5, 0.5)
     .linespacing(20)
     .draw(canvas);
 
@@ -29,7 +29,7 @@ Usage
 Example
 ---
 
-See [demo](http://component-kelonye.rhcloud.com/#/523b44b58acdd27159000002)
+See [demo](http://component-kelonye.rhcloud.com/#/523dcc8d12a4b7fa2900000b)
 
     $ make example
 
